@@ -1,0 +1,104 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:rgb(250, 248, 247);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    min-width: 90%;
+    min-height: 100vh;
+    box-shadow: 5px 0 15px rgb(0, 0, 0, 0.2);
+    padding:20px 50px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* box-shadow: 5px 0 15px rgb(0, 0, 0, 0.2); */
+
+}
+
+nav ul{
+    display: flex;
+    column-gap: 2rem;
+}
+
+nav ul li{
+    list-style: none;
+    color: rgb(43, 42, 42);
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    color:rgb(108,105,105,);
+    font-weight:bold;
+    font-family: sans-serift;
+}
+
+/* min-styles */
+main{
+    margin-top: 60px;
+     box-shadow: 5px 0 15px rgb(0, 0, 0, 0.2); 
+     min-height: 80vh;
+    
+}
+
+main h3{
+
+font-size: 25px;
+color: rgb(51, 41, 63);
+font-family:sans-serift ;
+font-weight: 500;
+
+}
+
+main .btn-group {
+
+  display: flex;
+  column-gap: 0.5rem;
+    margin-top: 30px;
+
+}
+main .btn-group a{
+
+    text-decoration: none;
+
+}
+
+
+main .btn-group a button{
+    padding:6px;
+    background-color: transparent;
+    border: 1px solid burlywood ;
+    border-radius: 5px;
+    color:burlywood;
+}
+
+main .btn-group a button.active{
+    background-color: burlywood;
+    color:aliceblue
+}
+
+
+.imegis{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap:3rem 2rem;
+    margin-top: 30px;
+}
+
+
+ .imegis img{
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+ }
